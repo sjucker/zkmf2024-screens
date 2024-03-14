@@ -1,75 +1,22 @@
-# Nuxt 3 Minimal Starter
+# ZKMF2024 Website
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Deployment
 
-## Setup
+The website is deployed using Netlify.  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6a65a5bd-5325-47e7-9a04-6155ca6d56eb/deploy-status)](https://app.netlify.com/sites/zkmf2024-screens/deploys)
 
-Make sure to install the dependencies:
+### Build settings
 
-```bash
-# npm
-npm install
+* Build command: `npm run generate`
+* Publish directory: `dist`
 
-# pnpm
-pnpm install
+### Environment variables
 
-# yarn
-yarn install
+* "Add a single variable"
+    * `API_BASE`
 
-# bun
-bun install
+For local development add a `.env` file in root folder looking like this:
+
+```properties
+API_BASE=<EITHER LOCALHOST OR TESTSERVER URL>
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
